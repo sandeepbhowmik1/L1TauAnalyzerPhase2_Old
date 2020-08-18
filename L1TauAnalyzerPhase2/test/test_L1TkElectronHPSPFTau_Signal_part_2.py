@@ -1,0 +1,61 @@
+import FWCore.ParameterSet.Config as cms
+process = cms.Process('Analyze')
+process.maxEvents = cms.untracked.PSet(
+	input = cms.untracked.int32(-1)
+	)
+process.source = cms.Source("PoolSource",
+	fileNames = cms.untracked.vstring(
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_59.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_60.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_61.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_62.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_63.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_64.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_65.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_66.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_67.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_68.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_69.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_7.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_70.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_71.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_72.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_73.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_74.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_75.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_76.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_77.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_78.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_79.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_8.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_80.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_81.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_82.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_83.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_84.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_85.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_86.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_87.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_88.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_89.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_9.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_90.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_91.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_92.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_93.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_94.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_95.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_96.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_97.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_98.root',
+	'file:/hdfs/cms/store/user/sbhowmik/GluGluHToTauTau_M125_14TeV_powheg_pythia8_TuneCP5/PhaseIITDRSpring19MiniAOD_20200422/200423_135728/0000/NTuple_L1TkMuonHPSPFTauProducer_99.root',
+	)
+)
+process.load("L1TauAnalyzerPhase2.L1TauAnalyzerPhase2.L1TkElectronHPSPFTauAnalyzer_cff")
+process.L1TkElectronHPSPFTauAnalyzer.histRootFileName = cms.string("hist_test_L1TkElectronHPSPFTauAnalyzer_Signal_20200803_part_2.root")
+process.L1TkElectronHPSPFTauAnalyzer.bdtRootFileName = cms.string("bdt_test_L1TkElectronHPSPFTauAnalyzer_Signal_20200803_part_2.root")
+process.p = cms.Path(
+	process.AnalyzerSeq
+)
+process.schedule = cms.Schedule(process.p)
+process.TFileService=cms.Service('TFileService',fileName=cms.string("rootTree_test_L1TkElectronHPSPFTauAnalyzer_Signal_20200803_part_2.root"))
